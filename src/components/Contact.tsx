@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  // const [error, setError] = useState<string | any>(null);
 
 
   const animationReference = useRef<HTMLDivElement>(null);
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
 
 
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
-    setError(null);
+    // setError(null);
     e.preventDefault();
     const form = e.currentTarget;
 
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
       form.reset();
     } catch (error) {
       console.error('Error sending email:', error);
-      setError('An error occurred, try again later');
+      // setError('An error occurred, try again later');
     }
   };
   const handleInputFocus = (fieldName: string) => {
