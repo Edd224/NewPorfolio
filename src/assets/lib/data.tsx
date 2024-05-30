@@ -409,7 +409,7 @@ export const contactData = {
     en: "Contact",
   },
   description: {
-    sk: "Napíš mi správu a ja sa ti ozvem.",
+    sk: "Napíš mi správu, a ja sa ti ozvem.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
@@ -442,7 +442,7 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        sk: "Tvoj predmet",
+        sk: "Predmet tvojej správy",
         en: "Your Subject",
       },
       type: "text",

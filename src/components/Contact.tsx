@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Button from "./Button";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 import { Highlight, themes } from "prism-react-renderer";
 import { contactData, toastMessages } from "../assets/lib/data.tsx";
 import { useSectionInView } from "../assets/lib/hooks";
@@ -11,7 +11,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
+  const userId = import.meta.env.VITE_EMAILJS_USER_ID || "";
+
+  // Log the environment variables to ensure they are being read correctly
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -24,6 +28,7 @@ const Contact: React.FC = () => {
   const { theme } = useTheme();
   const [error, setError] = useState<string | any>(null);
 
+
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: animationReference,
@@ -32,32 +37,35 @@ const Contact: React.FC = () => {
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
+  // Initialize EmailJS with the User ID (Public Key)
+  emailjs.init(userId);
+  emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
+
+  // console.log('Service ID:', serviceId);
+  // console.log('Template ID:', templateId);
+  // console.log('User ID:', userId);
+
+
+
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
     setError(null);
-    console.log(error);
-
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    const form = e.currentTarget;
 
     try {
-      const response = await axios.post(apiBaseUrl, data);
+      const response = await emailjs.sendForm(serviceId, templateId, form, userId);
       console.log(response);
       if (language === "SK") {
         toast.success(toastMessages.successEmailSent.sk);
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
+      form.reset();
     } catch (error) {
-      console.log(error);
-      if (language === "SK") {
-        toast.error(toastMessages.failedEmailSent.sk);
-      } else {
-        toast.error(toastMessages.failedEmailSent.en);
-      }
-      setError("An Error occured, try again later");
+      console.error('Error sending email:', error);
+      setError('An error occurred, try again later');
     }
   };
-
   const handleInputFocus = (fieldName: string) => {
     setCursor(`${fieldName}${cursor}`);
   };
@@ -125,51 +133,20 @@ import  { useState } from "react";
 // 🌈 Spreading Stardust: 
 // Crafting Cosmic Email 🌌
 
-const [sender, setSender] = "${name}${
-    lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
-  }🚀";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
-const [subject, setSubject] = \n"${subject}${
-    lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
-  }✨";
+const [sender, setSender] = "${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
+    }🚀";
+const [recipient, setRecipient] = "${email}${lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
+    }📧";
+const [subject, setSubject] = \n"${subject}${lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
+    }✨";
 const [message, setMessage] = 
 \`Hello, intrepid traveler! 👋\n
 Across the cosmos, a message for you:\n
-"${wordWrap(message, 40, " ")}${
-    lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
-  }"\n
+"${wordWrap(message, 40, " ")}${lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
+    }"\n
 Wishing you stardust dreams,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
-
-  //   const codeSnippet2 = `
-  // // 🚀 Initiating Quantum Email Transmission 🪐
-  // const launchEmail = async () => {
-  //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //      sender,
-  //      recipient,
-  //      subject,
-  //      message
-  //     })
-  //    });
-
-  //    if (response.ok) {
-  //    console.log('🌌 Transmission successful!');
-  //    } else {
-  //    console.error('🌠 Cosmic glitch encountered...');
-  //    }
-  //   } catch (error) {
-  //   console.error('🌪 Quantum disturbance detected:', error);
-  //   }
-  // };
-  // // 🚀 Ready for Liftoff? 🛸
-  // launchEmail();`;
 
   return (
     <React.Fragment>
@@ -203,7 +180,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           </motion.div>
         </div>
         <div className="flex flex-row justify-center items-start px-32 pt-32 mb-32 max-lg:flex-col max-lg:p-10">
-          <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress">
+          <div className="w-1/2  bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-[#1a2238] duration-500 transition-all  quote-outer-container text-left max-lg:hidden cursor-progress">
             <Highlight
               code={codeSnippet}
               language="tsx"
@@ -241,10 +218,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   input.name === "name"
                     ? name
                     : input.name === "email"
-                    ? email
-                    : input.name === "subject"
-                    ? subject
-                    : message
+                      ? email
+                      : input.name === "subject"
+                        ? subject
+                        : message
                 }
                 required
                 onFocus={() => {
@@ -256,11 +233,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   setLastUpdatedField(input.name);
                 }}
                 onChange={handleInputChange}
-                className={`${
-                  theme === "dark"
-                    ? "bg-[--blackblue] dark-mode-shadow "
-                    : "bg-[--white] dark-shadow "
-                }`}
+                className={`${theme === "dark"
+                    ? "bg-[--blackblue] dark-mode-shadow  "
+                    : "bg-[--white] dark-shadow  "
+                  }`}
               />
             ))}
             <textarea
@@ -280,11 +256,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 setLastUpdatedField(contactData.textarea.name);
               }}
               onChange={handleInputChange}
-              className={`${
-                theme === "dark"
+              className={`${theme === "dark"
                   ? "bg-[--blackblue] dark-mode-shadow"
                   : "bg-[--white] dark-shadow"
-              }`}
+                }`}
             />
             <div className="privacy-checkbox flex gap-16">
               <label
@@ -310,7 +285,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 ? `${contactData.privacyOptIn.description.sk}`
                 : `${contactData.privacyOptIn.description.en}`}
             </p>
-            <Button 
+            <Button
               value={
                 language === "SK"
                   ? `${contactData.button.value.sk}`

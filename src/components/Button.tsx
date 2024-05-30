@@ -13,6 +13,7 @@ interface ButtonProps {
   buttonhovercolor?: string;
   type?: "button" | "submit" | "reset";
   elementType?: "input" | "button";
+  disabled?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({
