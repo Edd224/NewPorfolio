@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  // const [error, setError] = useState<string | any>(null);
 
 
   const animationReference = useRef<HTMLDivElement>(null);
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
 
   // Initialize EmailJS with the User ID (Public Key)
   emailjs.init(userId);
-  emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID) ;
+  // emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID) ;
 
   // console.log('Service ID:', serviceId);
   // console.log('Template ID:', templateId);
@@ -63,9 +63,11 @@ const Contact: React.FC = () => {
       form.reset();
     } catch (error) {
       console.error('Error sending email:', error);
-      setError('An error occurred, try again later');
+      toast.error('An error occurred, please try again later.');
     }
   };
+  
+  
   const handleInputFocus = (fieldName: string) => {
     setCursor(`${fieldName}${cursor}`);
   };
@@ -234,8 +236,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 }}
                 onChange={handleInputChange}
                 className={`${theme === "dark"
-                    ? "bg-[--blackblue] dark-mode-shadow  "
-                    : "bg-[--white] dark-shadow  "
+                  ? "bg-[--blackblue] dark-mode-shadow  "
+                  : "bg-[--white] dark-shadow  "
                   }`}
               />
             ))}
@@ -257,8 +259,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               }}
               onChange={handleInputChange}
               className={`${theme === "dark"
-                  ? "bg-[--blackblue] dark-mode-shadow"
-                  : "bg-[--white] dark-shadow"
+                ? "bg-[--blackblue] dark-mode-shadow"
+                : "bg-[--white] dark-shadow"
                 }`}
             />
             <div className="privacy-checkbox flex gap-16">
