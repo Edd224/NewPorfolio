@@ -63,11 +63,10 @@ export function useQuoteAnimation(quoteElementSelector: string) {
           } else {
             h2Timeline.progress(self.progress);
           }
-          const scrollDirection = self.getVelocity() > 1 ? 1 : -1; // 1 für runter scrollen, -1 für hoch scrollen
+          const scrollDirection = self.getVelocity() > 1 ? 1 : -1; 
           if (scrollDirection === 1) {
-            h2Timeline.play(); // Animation fortsetzen, wenn der Benutzer nach unten scrollt
-          } else {
-            h2Timeline.pause(); // Animation stoppen, wenn der Benutzer nach oben scrollt
+            h2Timeline.play(); 
+            h2Timeline.pause(); 
           }
         },
       });
