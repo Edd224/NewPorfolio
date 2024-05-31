@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
 
   // Initialize EmailJS with the User ID (Public Key)
   emailjs.init(userId);
-  emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
+  emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID) ;
 
   // console.log('Service ID:', serviceId);
   // console.log('Template ID:', templateId);
