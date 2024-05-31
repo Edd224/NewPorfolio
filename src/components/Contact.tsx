@@ -66,8 +66,8 @@ const Contact: React.FC = () => {
       toast.error('An error occurred, please try again later.');
     }
   };
-  
-  
+
+
   const handleInputFocus = (fieldName: string) => {
     setCursor(`${fieldName}${cursor}`);
   };
@@ -313,6 +313,10 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               theme={theme}
             />
           </form>
+{/* test */}
+          <p>Service ID: {serviceId}</p>
+          <p>Template ID: {templateId}</p>
+          <p>User ID: {userId}</p>
         </div>
       </section>
     </React.Fragment>
