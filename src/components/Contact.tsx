@@ -314,9 +314,9 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             />
           </form>
 {/* test */}
-          <p>Service ID: {serviceId}</p>
+          {/* <p>Service ID: {serviceId}</p>
           <p>Template ID: {templateId}</p>
-          <p>User ID: {userId}</p>
+          <p>User ID: {userId}</p> */}
         </div>
       </section>
     </React.Fragment>
