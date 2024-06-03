@@ -84,8 +84,8 @@ export const projectsData = [
       { name: "Tailwind", icon: tailwindcssicon },
     ],
     image: stribrna,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "https://github.com/Edd224?tab=repositories",
+    githuburl: "https://github.com/Edd224?tab=repositories",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -115,9 +115,9 @@ export const projectsData = [
       { name: "Next", icon: nextjsicon },
     ],
     image: sunizer,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "https://github.com/Edd224?tab=repositories",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/Edd224?tab=repositories",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -144,8 +144,8 @@ export const projectsData = [
       { name: "Figma", icon: figmaicon },
     ],
     image: logomanual,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "https://github.com/Edd224?tab=repositories",
+    githuburl: "https://github.com/Edd224?tab=repositories",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
