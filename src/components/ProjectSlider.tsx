@@ -23,7 +23,7 @@ const ProjectSlider: React.FC = () => {
     target: animationReference,
     offset: ["1 1", "1.3 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform(scrollYProgress, [0,1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const notifyServerRequest = () => {
     if (language === "SK") {
@@ -146,11 +146,11 @@ const ProjectSlider: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="right-content relative h-[50rem] overflow-hidden rounded-xl w-[30%] transition-all duration-500 shadow-2xl">
+                  <div className="right-content relative h-[52rem] overflow-hidden rounded-xl w-[32%] transition-all duration-[10000ms] shadow-2xl">
                     <img
                       src={project.image}
                       alt={`${project.title}-project-mockup`}
-                      className={`w-full h-auto transition-all duration-[7000ms] transform opacity-100 hover:translate-y-[-70%] 
+                      className={`w-full h-auto transition-all duration-[9000ms] transform opacity-100 hover:translate-y-[-70%] 
                       `}
                     />
                   </div>

@@ -40,7 +40,7 @@ export const headerIntroData = {
   subtitle: "Developer",
   description: {
     sk: "Som Edi, vývojár s cieľom posunúť svoju kariéru dopredu a podieľať sa na inšpirujúcich projektoch. Tu prezentujem svoju prácu a vášeň pre webový vývoj. Poďme spoločne formovať digitálne riešenia a tvoriť budúcnosť!",
-    en: "I'm Ed, a developer aiming to advance my career and participate in inspiring projects. Here I present my work and passion for web development. Let's shape digital solutions and create the future together!",
+    en: "I'm Ed, a developer aiming to advance my career and participate in inspiring projects. Here, I present my work and passion for web development. Let's shape digital solutions and create the future together!",
   },
   buttons: [
     {
@@ -71,7 +71,7 @@ export const projectsData = [
     description:
       "Ďalším projektom bol Stribrna, prezentačný web interiérovej dizajnérky. Keďže ide o prezentačný web, nebol použitý žiadny backend a celý web som vytvoril sám v React.js, TypeScript, Tailwind CSS a Vite.js. Na webe je veľa obrázkov a vytvoril som vlastný carousel na ich zobrazenie, všetko podľa návrhu vo Figme.",
     description_EN:
-      "Another project I worked on was Stribrna, a portfolio website for an interior designer. As a presentation site, no backend was used, and I developed the entire website independently using React.js, TypeScript, Tailwind CSS, and Vite.js. The site features numerous images, and I created a custom carousel to showcase them, following the design provided in Figma.",
+      "One of the projects I worked on was Stribrna, a portfolio website for an interior designer. It is a presentation site with no backend. I independently developed the website using React.js, TypeScript, Tailwind CSS, and Vite.js. The site contains numerous images, and I created a custom carousel to showcase them, following the design provided in Figma.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -100,7 +100,7 @@ export const projectsData = [
     description:
       "Vytvoril som firemný web pre spoločnosť Sunizer, ktorá vyrába svetlovody na zabezpečenie prirodzeného svetla v objektoch. Pracoval som na rôznych sekciách webu spolu s tímom. Použili sme React.js a TypeScript pre frontend, a štýlovali sme cez Tailwind CSS. Integrovali sme tiež Inertia.js pre plynulú navigáciu medzi stránkami. Na backende sme použili Laravel, hoci som sa na tejto časti priamo nepodieľal.",
     description_EN:
-      "I contributed to the development of a corporate website for Sunizer, a company specializing in light tubes that provide natural light to buildings. I collaborated with a team to work on various sections of the website. We utilized React.js and TypeScript for the frontend, and styled the application using Tailwind CSS. Additionally, we integrated Inertia.js for seamless page navigation. The backend was built with Laravel, although I did not work on that part directly.",
+      "I contributed to developing a corporate website for Sunizer, a company specializing in light tubes that provide natural light to buildings. I collaborated with a team to work on various sections of the website. We utilized React.js and TypeScript for the front end and styled the application using Tailwind CSS. Additionally, we integrated Inertia.js for seamless page navigation. The backend was built with Laravel, although I did not work on that part directly.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -132,7 +132,7 @@ export const projectsData = [
     description:
       "Ďalším projektom bol Logomanual, ktorý som taktiež vytvoril sám. Použil som React.js, TypeScript, Inertia.js, Laravel, API a Vite.js. Ide o webovú aplikáciu na ukladanie rôznych fontov, viacerých log, farieb a iných firemných assetov. Aplikácia má aj administratívnu verziu, kde je možné tieto prvky nahrávať, upravovať a pridávať. Obsahuje rôzne prezentácie fontov, farieb na logách, samotné logá a obrázky.",
     description_EN:
-      "Another project I worked on was Logomanual, which I developed independently. I used React.js, TypeScript, Inertia.js, Laravel, API, and Vite.js. This web application is designed to store various fonts, multiple logos, colors, and other corporate assets. It also includes an admin version where these elements can be uploaded, edited, and added. The application features different presentations of fonts, colors on logos, and the logos and images themselves.",
+      "I developed Logomanual independently using React.js, TypeScript, Inertia.js, Laravel, API, and Vite.js. This web application was created to archive various fonts, logos, colours, and other corporate assets. It also includes an admin version where these elements can be uploaded, edited, and added. The application features different presentations of fonts, colours on logos, and the logos and images themselves.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -385,13 +385,13 @@ export const aboutMeData = {
     {
       title: "The Circuits of My Heart",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "When not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
       icon: hardwareicon,
     },
     {
       title: "On the Fast Lane of Life",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars and enjoying being on unknown roads with powerful machines are my passions.",
       icon: caricon,
     },
     {
@@ -410,7 +410,7 @@ export const contactData = {
   },
   description: {
     sk: "Napíš mi správu, a ja sa ti ozvem.",
-    en: "Write me a message and I will get back to you.",
+    en: "Write me a message, and I will get back to you.",
   },
   inputfields: [
     {
