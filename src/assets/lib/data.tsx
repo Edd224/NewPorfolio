@@ -8,6 +8,7 @@ import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
+import mockApi from "../../assets/icons/mocApi.svg";
 import laravelicon from "../../assets/icons/laravelicon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
@@ -21,6 +22,7 @@ import axiosicon from "../../assets/icons/axiosicon.svg";
 import stribrna from "../../assets/img/stribrna.webp";
 import logomanual from "../../assets/img/logomanual.webp";
 import sunizer from "../../assets/img/sunizer.webp";
+import todo_app from "../../assets/img/todo_app.webp"
 import profilepicture from "../img/CV EduardHerák 2.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -78,7 +80,7 @@ export const projectsData = [
       { name: "Laravel", icon: laravelicon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Typescript", icon: typescripticon },      
+      { name: "Typescript", icon: typescripticon },
       { name: "Figma", icon: figmaicon },
       { name: "Axios", icon: axiosicon },
       { name: "Tailwind", icon: tailwindcssicon },
@@ -95,6 +97,35 @@ export const projectsData = [
       projectcolor: "#70B9BE",
     },
   },
+
+  {
+    title: "Todo Application",
+    description:
+      "Todo aplikácia umožňuje používateľom vytvárať úlohy s názvami, nastaviť ich priority (od 1 do 3 hviezdičiek) a definovať termíny splnenia. Používatelia môžu tiež označiť úlohy relevantnými kľúčovými slovami pre lepšiu organizáciu. Všetky úlohy sú uložené a spravované prostredníctvom API požiadaviek na MockAPI. Aplikácia poskytuje intuitívne rozhranie pre prepínanie stavu dokončenia úloh a úpravu alebo odstraňovanie úloh podľa potreby. Pre lepší užívateľský zážitok v podmienkach slabého osvetlenia je možné prepínať tmavý režim.",
+    description_EN:
+      "The Todo App allows users to create tasks with titles, set their priorities (from 1 to 3 stars), and define due dates. Users can also tag tasks with relevant keywords for better organization. All tasks are stored and managed through API requests to MockAPI. The app provides an intuitive interface for toggling task completion and editing or deleting tasks as needed. Dark mode can be toggled for a better user experience in low light conditions.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "React", icon: reacticon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Tailwind", icon: tailwindcssicon },
+      { name: "MockApi", icon: mockApi },
+    ],
+    image: todo_app,
+    deploymenturl: "https://edi-todo-app.netlify.app",
+    githuburl: "https://github.com/Edd224/my-todo-app",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
+    },
+  },
+
   {
     title: "Sunizer",
     description:
@@ -107,7 +138,7 @@ export const projectsData = [
       { name: "Tailwind", icon: tailwindcssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "Typescript", icon: typescripticon },      
+      { name: "Typescript", icon: typescripticon },
       { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
       { name: "Node.js", icon: nodejsicon },
@@ -127,6 +158,7 @@ export const projectsData = [
       projectcolor: "#FFD5BD",
     },
   },
+  
   {
     title: "Logomanual",
     description:
@@ -139,7 +171,7 @@ export const projectsData = [
       { name: "Tailwind", icon: tailwindcssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "Typescript", icon: typescripticon },      
+      { name: "Typescript", icon: typescripticon },
       { name: "Axios", icon: axiosicon },
       { name: "Figma", icon: figmaicon },
     ],
