@@ -29,7 +29,7 @@ import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
-import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
+import { GoHome, GoPerson, GoMail, GoStack, GoProject, GoFileMedia } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
@@ -158,7 +158,7 @@ export const projectsData = [
       projectcolor: "#FFD5BD",
     },
   },
-  
+
   {
     title: "Logomanual",
     description:
@@ -345,6 +345,7 @@ export const navLinks = [
   { sk: "Zručnosti", en: "Skills", hash: "#skills", icon: GoStack },
   { sk: "Projekty", en: "Projects", hash: "#projects", icon: GoProject },
   { sk: "O mne", en: "About me", hash: "#about-me", icon: GoPerson },
+  { sk: "Galéria", en: "Gallery", hash: "#gallery", icon: GoFileMedia },
   { sk: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
@@ -434,6 +435,13 @@ export const aboutMeData = {
     },
   ],
 };
+
+export const galleryData = {
+  title: "Galéria",
+  title_EN: "Gallery",
+  description: "Moje grafické práce",
+  description_EN: "My graphic works",
+}
 
 export const contactData = {
   title: {
@@ -666,3 +674,5 @@ export const widthStyles: Record<string, { widths: [string, string] }> = {
     widths: ["0%", "0%"],
   },
 };
+
+

@@ -5,23 +5,29 @@
 /* FONT IMPORTS */
 @font-face {
   font-family: "poppins-bold";
-  src: url("./assets/fonts/font3.woff2");
+  src: url("./assets/fonts/Inter-Regular.otf");
 }
 
 @font-face {
   font-family: "poppins-semibold";
-  src: url("./assets/fonts/font2.woff2");
+  src: url("./assets/fonts/Inter-Regular.otf");
 }
 
 @font-face {
   font-family: "Mauline";
-  src: url("./assets/fonts/Mauline.otf");
+  src: url("./assets/fonts/Queensides-3z7Ey.ttf");
 }
 
 @font-face {
   font-family: "poppins-regular";
-  src: url("./assets/fonts/font1.woff2");
+  src: url("./assets/fonts/Inter-Regular.otf"); 
 }
+
+@font-face {
+  font-family: "fontGallery";
+  src: url("./assets/fonts/RaginyRegular-rgwZA.ttf"); 
+}
+
 
 /* GENERAL COLORS */
 :root {

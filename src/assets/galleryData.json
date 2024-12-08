@@ -1,0 +1,204 @@
+{
+
+"title": "Galéria",
+"title_EN": "Gallery",
+"description": "Vitajte v mojej galérii",
+"description_EN": "Welcome to our gallery.",
+"items":
+
+
+[
+  {
+    "name": "nature",
+    "src": "/gallery/1-min.jpg",
+    "title": "Víla",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/2-min.jpg",
+    "title": "Jeseň",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/3-min.jpg",
+    "title": "Porcelánová",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/4-min.jpg",
+    "title": "Kolibrík",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/5-min.jpg",
+    "title": "Údiv",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/6-min.jpg",
+    "title": "Morská",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/7-min.jpg",
+    "title": "Mladík",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/8-min.jpg",
+    "title": "Marek",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/9-min.jpg",
+    "title": "Japonský kapor",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/10-min.jpg",
+    "title": "Úzkosť",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/11-min.jpg",
+    "title": "Brunetka",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/19-min.jpg",
+    "title": "Panter",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/20-min.jpg",
+    "title": "Kolibríky",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/21-min.jpg",
+    "title": "Na slnku",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/22-min.jpg",
+    "title": "Po daždi",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/23-min.jpg",
+    "title": "Líšky",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/24-min.jpg",
+    "title": "Ruža",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/25-min.jpg",
+    "title": "Fame Fatale",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/26-min.jpg",
+    "title": "Nórsko",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/27-min.jpg",
+    "title": "Plač",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/28-min.jpg",
+    "title": "Tajuplná",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/29-min.jpg",
+    "title": "Čas",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/30-min.jpg",
+    "title": "Bolesť",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/31-min.jpg",
+    "title": "Objatie",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/32-min.jpg",
+    "title": "Zuzana",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/33-min.jpg",
+    "title": "Leto",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/34-min.jpg",
+    "title": "Jar",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/35-min.jpg",
+    "title": "Zima",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/36-min.jpg",
+    "title": "Sova",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/37-min.jpg",
+    "title": "Vášeň",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/38-min.jpg",
+    "title": "Modelka",
+    "text": "Watercolor / Aqurel"
+  },
+  {
+    "name": "nature",
+    "src": "/gallery/39-min.jpg",
+    "title": "Strom",
+    "text": "Watercolor / Aqurel"
+  }
+]
+}
