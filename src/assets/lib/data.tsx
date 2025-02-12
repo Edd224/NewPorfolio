@@ -11,6 +11,7 @@ import reacticon from "../../assets/icons/reacticon.svg";
 import mockApi from "../../assets/icons/mocApi.svg";
 import laravelicon from "../../assets/icons/laravelicon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
+import redux from "../../assets/icons/redux.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
@@ -19,8 +20,13 @@ import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
+import sandGrid from "../../assets/icons/sendgrid-svgrepo-com.svg";
+import jwt from "../../assets/icons/jwt.svg";
 import stribrna from "../../assets/img/stribrna.webp";
 import logomanual from "../../assets/img/logomanual.webp";
+import lekia from "../../assets/img/lekia.webp";
+import accute from "../../assets/img/accute.webp";
+import Deu from "../../assets/img/Deu.webp";
 import sunizer from "../../assets/img/sunizer.webp";
 import todo_app from "../../assets/img/todo_app.webp"
 import profilepicture from "../img/CV EduardHerák 2.jpg";
@@ -187,6 +193,93 @@ export const projectsData = [
       projectcolor: "#FFD5BD",
     },
   },
+  {
+    title: "Lekia",
+    description:
+      "Vytvoril som modernú a responzívnu webovú stránku pre alergologickú ambulanciu, ktorá poskytuje pacientom všetky dôležité informácie o službách, ordinačných hodinách a možnostiach objednania. Stránka je navrhnutá s dôrazom na jednoduchosť, prehľadnosť a rýchlu navigáciu. Okrem vývoja som sa podieľal aj na tvorbe dizajnu a vytvoril unikátne logo, ktoré odráža profesionálny a priateľský charakter ambulancie.",
+    description_EN:
+      "I developed a modern and responsive website for an allergy clinic, providing patients with essential information about services, working hours, and appointment options. The website is designed with a focus on simplicity, clarity, and fast navigation. In addition to development, I also designed the overall visual concept and created a unique logo that reflects the professional and friendly character of the clinic.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "Tailwind", icon: tailwindcssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "Next", icon: nextjsicon },
+      { name: "React", icon: reacticon },
+      { name: "Typescript", icon: typescripticon },
+    ],
+    image: lekia,
+    deploymenturl: "https://lekia.sk/",
+    githuburl: "https://github.com/Edd224/my-doctor-website",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
+    title: "Deutschsprachereise",
+    description:
+      "Tento projekt je profesionálna prezentačná webstránka zameraná na poskytovanie online kurzov nemeckého jazyka pre jednotlivcov aj firmy. Okrem vzdelávacích služieb ponúka odborné preklady a editorskú činnosť. Webstránka bola navrhnutá s dôrazom na moderný a prehľadný dizajn, ktorý som vytvoril vrátane loga. Implementoval som aj prepojenie na SendGrid a Email.js pre efektívnu e-mailovú komunikáciu s klientmi.",
+    description_EN:
+      "This project is a professional presentation website focused on providing online German language courses for individuals and businesses. In addition to educational services, it offers professional translations and editorial work. The website was designed with a modern and intuitive layout, which I created, including the logo. I also integrated SendGrid and Email.js to ensure efficient email communication with clients.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "Tailwind", icon: tailwindcssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "Next", icon: nextjsicon },
+      { name: "React", icon: reacticon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "SandGrid", icon: sandGrid },
+    ],
+    image: Deu,
+    deploymenturl: "https://deutschsprachereise.sk/",
+    githuburl: "https://github.com/Edd224/deutschsprachereise1",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
+    title: "Accute eshop",
+    description:
+      "Tento projekt je jednostránkový e-shop zameraný na predaj produktov( oblečenia). Bol navrhnutý s dôrazom na moderný dizajn, jednoduchú navigáciu a optimálny používateľský zážitok. Celý dizajn som vytvoril ja s cieľom dosiahnuť čistý a profesionálny vzhľad.",
+
+    description_EN:
+      "This project is a one-page e-commerce store focused products. It was designed with a modern look, easy navigation, and an optimized user experience. I created the entire design myself to ensure a clean and professional appearance.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "Tailwind", icon: tailwindcssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "Typescript", icon: typescripticon },
+      { name: "jwt-decode", icon: jwt },
+      { name: "Redux", icon: redux },
+    ],
+    image: accute,
+    deploymenturl: "https://accute-shop.netlify.app/",
+    githuburl: "https://github.com/Edd224/accute",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+
+
+
 ] as const;
 
 export const liveTickerData = {
